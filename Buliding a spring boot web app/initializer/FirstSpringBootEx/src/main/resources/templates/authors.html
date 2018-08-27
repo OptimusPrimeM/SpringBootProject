@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="authors.css">
+</head>
+<body>
+<div>
+    <table>
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>firstName</th>
+            <th>lastName</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each=" author : ${authors}">
+            <td th:text="${author.id}"> 001</td>
+            <td th:text="${author.firstName}">prime</td>
+            <td th:text="${author.lastName}"> optimum</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
