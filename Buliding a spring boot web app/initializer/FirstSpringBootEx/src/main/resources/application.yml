@@ -2,5 +2,5 @@ spring:
   h2:
     console:
       enabled: true
-#  jpa:
-#    open-in-view: false
+  jpa:
+    open-in-view: false
