@@ -18,7 +18,6 @@ public class SetterInjectedControllerTest {
     @Test
     public void sayHello() throws Exception {
         assertEquals(GreetingServiceImpl.HELLO_PRIME, setterInjectedController.sayHello());
-
     }
 
 
